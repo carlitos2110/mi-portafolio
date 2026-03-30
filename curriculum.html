@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title data-key="pageTitleResume">Portafolio - Curriculum</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="index.html" data-key="ownerName">Carlos Andres Vallejos Yahn</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" data-key="navHome"> Inicio</a></li>
+          <li><a href="sobremi.html" data-key="navAbout"> Sobre mi</a></li>
+          <li><a href="habilidades.html" data-key="navSkills"> Habilidades</a></li>
+          <li><a href="curriculum.html" data-key="navResume"> Curriculum</a></li>
+          <li><a href="portafolio.html" data-key="navPortfolio"> Portafolio</a></li>
+          <li><a href="contactos.html" data-key="navContacts"> Contactos</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+  <section id="Curriculum" class="Curriculum" style="padding-top: 100px; background-color: #1e2326; color: white; min-height: 100vh;">
+    <div class="contenido-seccion" style="max-width: 1100px; margin: auto; padding: 20px;">
+      <h2 data-key="resume" style="font-size: 48px; font-family: 'Righteous'; text-align: center; padding: 20px;">Curriculum</h2>
+      
+      <div class="fila" style="display: flex; flex-direction: column; gap: 40px;">
+        
+        <!-- Educación -->
+        <div class="col">
+          <h3 data-key="education" style="font-size: 28px; font-family: 'Righteous'; margin-bottom: 25px; color: #1cb698;">Educación</h3>
+          <div class="item" style="background-color: #252a2e; padding: 20px; border-radius: 10px; border-left: 5px solid #1cb698; margin-bottom: 20px;">
+            <h4 style="color: #1cb698;">Instituto de Formación Docente J. Alfredo Ferreira</h4>
+            <p data-key="eduFerreira">Desarrollo de Software</p>
+          </div>
+          <div class="item" style="background-color: #252a2e; padding: 20px; border-radius: 10px; border-left: 5px solid #1cb698;">
+            <h4 style="color: #1cb698;">Global Academy</h4>
+            <p data-key="eduGlobal">Desarrollo Web Full Stack</p>
+            <a href="https://uai.edu.ar/diploma/PDFsPag/9c84831b04BAGATT540eada9b22a7368797755cfd6c5f724e476.pdf" target="_blank" style="color: #1cb698; text-decoration: none; font-size: 14px; display: inline-block; margin-top: 10px;">
+              <i class="fa-solid fa-certificate"></i> <span data-key="viewCertificate">Ver Certificado</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Perfil Profesional -->
+        <div class="col">
+          <h3 data-key="profProfileTitle" style="font-size: 28px; font-family: 'Righteous'; margin-bottom: 25px; color: #1cb698;">Perfil Profesional</h3>
+          <div class="item" style="background-color: #252a2e; padding: 20px; border-radius: 10px; line-height: 1.6;">
+            <p data-key="resumeSummary">Soy Técnico en Desarrollo de Software con interés en la creación de soluciones tecnológicas. Mi mayor experiencia está en el desarrollo backend con Flask y Django, utilizando bases de datos MySQL mediante XAMPP para el desarrollo y pruebas de aplicaciones. Me interesa seguir aprendiendo, mejorar mis habilidades y participar en proyectos que me permitan crecer como desarrollador.</p>
+          </div>
+        </div>
+
+        <!-- Habilidades Extras -->
+        <div class="col">
+          <h3 data-key="extraSkillsTitle" style="font-size: 28px; font-family: 'Righteous'; margin-bottom: 25px; color: #1cb698;">Habilidades Extras</h3>
+          <div class="item" style="background-color: #252a2e; padding: 20px; border-radius: 10px; line-height: 1.6;">
+            <ul style="list-style: none; padding: 0;">
+              <li style="margin-bottom: 10px;"><i class="fa-solid fa-gamepad" style="color: #1cb698; margin-right: 10px;"></i> <span data-key="extraSkillGodot">Desarrollo de videojuegos con Godot Engine</span></li>
+              <li style="margin-bottom: 10px;"><i class="fa-solid fa-video" style="color: #1cb698; margin-right: 10px;"></i> <span data-key="extraSkillFilmora">Edición de video con Wondershare Filmora</span></li>
+              <li><i class="fa-solid fa-file-excel" style="color: #1cb698; margin-right: 10px;"></i> <span data-key="extraSkillExcel">Manejo de hojas de cálculo con Microsoft Excel</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      
+      <div style="text-align: center; margin-top: 40px; display: flex; gap: 20px; justify-content: center;">
+        <button id="languageBtn" class="btn-descargar">🌐 <span data-key="changeLanguage">Cambiar idioma</span><span class="overlay"></span></button>
+        <a href="cv.pdf" download="CV_Carlos_Vallejos.pdf" class="btn-descargar">
+          <span data-key="viewCV">Ver Curriculum</span> <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

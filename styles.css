@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e2326;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 1px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #1cb698;
+}
+
+.nav-responsive {
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .contenedor-header header nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav#nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: #1e2326;
+        width: 100%;
+        border-top: 1px solid #1cb698;
+        padding: 20px 0;
+    }
+    nav#nav.responsive ul {
+        display: block !important;
+        width: 100%;
+    }
+    nav#nav.responsive ul li {
+        margin: 20px 0;
+        text-align: center;
+    }
+    nav#nav.responsive ul li a {
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,0.1)),
+                url('img/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 50px;
+    box-sizing: border-box;
+}
+
+
+.inicio .contenido-banner{
+    padding: 30px;
+    background-color: #1e2326;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 750px) {
+    .inicio .contenido-banner {
+        max-width: 320px;
+        padding: 20px;
+    }
+    .inicio .contenido-banner h1 {
+        font-size: 32px;
+    }
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+.inicio .contenido-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff; /* Se ajustó el valor del borde */
+    border-radius: 30px;
+    padding: 10px 20px; /* Asegura un tamaño adecuado para el enlace */
+    margin: 10px 5px;
+    font-size: 18px; /* Ajusté el tamaño de fuente para hacerlo más legible */
+    text-align: center; /* Centra el texto dentro del enlace */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el color y el fondo */
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1cb698; /* Color de fondo al pasar el puntero */
+    color: #fff; /* Asegura que el texto siga siendo blanco al pasar el puntero */
+}
+
+.sobremi  {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+
+
+}
+
+.Sobremi .contenido-seccion{
+    max-width: 1110px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px;
+
+}
+
+.sobremi .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #1cb698;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;            /* Activamos flexbox */
+    justify-content: space-between; /* Espacios entre las columnas */
+    gap: 20px;                /* Espacio entre las columnas */
+    flex-wrap: wrap;          /* Permite que las columnas se ajusten en pantallas pequeñas */
+}
+
+.sobremi .fila .col {
+    width: 48%;               /* Ajustamos el tamaño de las columnas (un poco menos del 50%) */
+    box-sizing: border-box;   /* Asegura que el padding no afecte el tamaño total */
+}
+
+
+@media (max-width: 768px) {
+    .sobremi .fila .col {
+        width: 100%; /* En pantallas pequeñas, las columnas se apilan verticalmente */
+    }
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #1cb698;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #1cb698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; /* Para distribuir los elementos dentro del contenedor */
+}
+
+.sobremi .fila .col .intereses {
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.sobremi .fila .col .intereses:hover {
+    background-color: #1cb698; /* Cambio de color al hacer hover */
+}
+.sobremi .fila .col .intereses i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button, .btn-descargar {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.sobremi button .overlay, .btn-descargar .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay, .btn-descargar:hover .overlay {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.Habilidades {
+  background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.Habilidades .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.Habilidades h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}  
+
+.Habilidades .fila {
+    display: flex;
+}
+
+.Habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.Habilidades .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.Habilidades .Habilidades span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Habilidades .Habilidades .barra-Habilidades {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.Habilidades .Habilidades .progreso {
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    
+}
+
+.Habilidades .Habilidades .barra-Habilidades span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.Habilidades .barra-Habilidades .progreso.javascript {
+    width: 0;
+    animation: javascript 2s forwards;
+}
+
+@keyframes javascript {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.htmlcss {
+    width: 0;
+    animation: htmlcss 2s forwards;
+}
+
+@keyframes htmlcss {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.nodejs {
+    width: 0;
+    animation: nodejs 2s forwards;
+}
+
+@keyframes nodejs {
+    0% { width: 0%; }
+    100% { width: 50%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.angular {
+    width: 0;
+    animation: angular 2s forwards;
+}
+
+@keyframes angular {
+    0% { width: 0%; }
+    100% { width: 75%; }
+}
+.Habilidades .barra-Habilidades .progreso.react {
+    width: 0;
+    animation: react 2s forwards;
+}
+
+@keyframes react {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.wordpress {
+    width: 0;
+    animation: wordpress 2s forwards;
+}
+
+@keyframes wordpress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.excel {
+    width: 0;
+    animation: excel 2s forwards;
+}
+
+@keyframes excel {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.xampp {
+    width: 0;
+    animation: xampp 2s forwards;
+}
+
+@keyframes xampp {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.sqlmongodb {
+    width: 0;
+    animation: sqlmongodb 2s forwards;
+}
+
+@keyframes sqlmongodb {
+    0% { width: 0%; }
+    100% { width: 75%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.godotendgime {
+    width: 0;
+    animation: godotendgime 2s forwards;
+}
+
+@keyframes godotendgime {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.python {
+    width: 0;
+    animation: python 2s forwards;
+}
+
+@keyframes python {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.siempredispuesto {
+    width: 0;
+    animation: siempredispuesto 2s forwards;
+}
+
+@keyframes siempredispuesto {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.trabajo {
+    width: 0;
+    animation: trabajo 2s forwards;
+}
+
+@keyframes trabajo {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.fulltime {
+    width: 0;
+    animation: fulltime 2s forwards;
+}
+
+@keyframes fulltime {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.Habilidades .barra-Habilidades .progreso.comunicacion {
+    width: 0;
+    animation: comunicacion 2s forwards;
+}
+
+@keyframes comunicacion {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+
+
+  
+  
+
+
+  
+
+  
+ 

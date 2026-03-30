@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title data-key="pageTitleAbout">Portafolio - Sobre Mi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="index.html" data-key="ownerName">Carlos Andres Vallejos Yahn</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" data-key="navHome"> Inicio</a></li>
+          <li><a href="sobremi.html" data-key="navAbout"> Sobre mi</a></li>
+          <li><a href="habilidades.html" data-key="navSkills"> Habilidades</a></li>
+          <li><a href="curriculum.html" data-key="navResume"> Curriculum</a></li>
+          <li><a href="portafolio.html" data-key="navPortfolio"> Portafolio</a></li>
+          <li><a href="contactos.html" data-key="navContacts"> Contactos</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+  <section id="Sobre mi" class="sobremi" style="padding-top: 100px;">
+    <div class="contenido-seccion">
+      <h2 data-key="aboutMe">Sobre mi</h2>
+      <p><span data-key="aboutMeGreeting">Hola mi nombre completo es Carlos Andres Vallejos Yahn </span>, <span data-key="aboutMeText">soy un apasionado del desarrollo web y la
+        programación, con experiencia en HTML, CSS, JavaScript, Node.js, Angular, React y MongoDB. Actualmente, estoy en
+        el último año de mi Tecnicatura en Desarrollo de Software y complementando mis estudios con un curso intensivo
+        de Full Stack Development.</span></p>
+
+      <div class="fila">
+        <div class="col">
+          <h3 data-key="personalData">Datos personales</h3>
+          <ul>
+            <li><strong data-key="birthday">Cumpleaños</strong> 05-06-2002</li>
+            <li><strong data-key="phone">Teléfono</strong> 3777394336</li>
+            <li><strong data-key="email">Gmail</strong> carlosandresvallejosyahn@gmail.com</li>
+            <li><strong data-key="github">GitHub</strong> <a href="https://github.com/dashboard" data-key="githubLink">Mi GitHub</a></li>
+            <li><strong data-key="position">Cargo</strong><span data-key="positionName"> Desarrollador de Software</span></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3 data-key="interests">Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="intereses"><i class="fa-solid fa-gamepad"></i> <span data-key="games">Juegos</span></div>
+            <div class="intereses"><i class="fa-solid fa-headphones"></i> <span data-key="music">Música</span></div>
+            <div class="intereses"><i class="fa-solid fa-plane"></i> <span data-key="travel">Viajes</span></div>
+            <div class="intereses"><i class="fa-regular fa-futbol"></i> <span data-key="soccer">Fútbol</span></div>
+            <div class="intereses"><i class="fa-solid fa-book"></i> <span data-key="books">Libros</span></div>
+            <div class="intereses"><i class="fa-solid fa-car"></i> <span data-key="vehicles">Vehículos</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 20px; justify-content: center;">
+        <button id="languageBtn" class="btn-descargar">🌐 <span data-key="changeLanguage">Cambiar idioma</span><span class="overlay"></span></button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

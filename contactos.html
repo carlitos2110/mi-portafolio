@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title data-key="pageTitleContacts">Portafolio - Contactos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="index.html" data-key="ownerName">Carlos Andres Vallejos Yahn</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" data-key="navHome"> Inicio</a></li>
+          <li><a href="sobremi.html" data-key="navAbout"> Sobre mi</a></li>
+          <li><a href="habilidades.html" data-key="navSkills"> Habilidades</a></li>
+          <li><a href="curriculum.html" data-key="navResume"> Curriculum</a></li>
+          <li><a href="portafolio.html" data-key="navPortfolio"> Portafolio</a></li>
+          <li><a href="contactos.html" data-key="navContacts"> Contactos</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+  <section id="Contactos" class="contactos" style="padding-top: 100px; background-color: #1e2326; color: white; min-height: 100vh;">
+    <div class="contenido-seccion" style="max-width: 1100px; margin: auto; padding: 20px;">
+      <h2 data-key="navContacts" style="font-size: 48px; font-family: 'Righteous'; text-align: center; padding: 20px;">Contactos</h2>
+      
+      <div class="fila-contactos" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px;">
+        
+        <!-- Formulario WhatsApp -->
+        <div class="col-contacto" style="flex: 1; min-width: 300px; max-width: 500px; background: #252a2e; padding: 30px; border-radius: 20px; border-top: 5px solid #25d366;">
+          <h3 style="margin-bottom: 20px; color: #25d366;"><i class="fa-brands fa-whatsapp"></i> <span data-key="formWsTitle">WhatsApp</span></h3>
+          <form id="formWhatsapp">
+            <div style="margin-bottom: 15px;">
+              <input type="text" id="nombreWs" data-key="placeholderName" placeholder="Tu Nombre" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background: #1e2326; color: white;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <textarea id="mensajeWs" data-key="placeholderMessage" placeholder="Tu Mensaje" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background: #1e2326; color: white; min-height: 100px;"></textarea>
+            </div>
+            <button type="submit" data-key="btnWs" style="width: 100%; background: #25d366; color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: bold;">Enviar a WhatsApp</button>
+          </form>
+        </div>
+
+        <!-- Formulario Gmail -->
+        <div class="col-contacto" style="flex: 1; min-width: 300px; max-width: 500px; background: #252a2e; padding: 30px; border-radius: 20px; border-top: 5px solid #1cb698;">
+          <h3 style="margin-bottom: 20px; color: #1cb698;"><i class="fa-solid fa-envelope"></i> <span data-key="formGmTitle">Gmail</span></h3>
+          <form id="formGmail">
+            <div style="margin-bottom: 15px;">
+              <input type="text" id="nombreGm" data-key="placeholderName" placeholder="Tu Nombre" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background: #1e2326; color: white;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <input type="text" id="asuntoGm" data-key="placeholderSubject" placeholder="Asunto" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background: #1e2326; color: white;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <textarea id="mensajeGm" data-key="placeholderMessage" placeholder="Tu Mensaje" required style="width: 100%; padding: 12px; border-radius: 8px; border: none; background: #1e2326; color: white; min-height: 100px;"></textarea>
+            </div>
+            <button type="submit" data-key="btnGm" style="width: 100%; background: #1cb698; color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: bold;">Enviar a Gmail</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <button id="languageBtn" class="btn-descargar">🌐 <span data-key="changeLanguage">Cambiar idioma</span><span class="overlay"></span></button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

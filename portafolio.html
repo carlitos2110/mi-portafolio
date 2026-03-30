@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title data-key="pageTitlePortfolio">Portafolio - Proyectos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="index.html" data-key="ownerName">Carlos Andres Vallejos Yahn</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" data-key="navHome"> Inicio</a></li>
+          <li><a href="sobremi.html" data-key="navAbout"> Sobre mi</a></li>
+          <li><a href="habilidades.html" data-key="navSkills"> Habilidades</a></li>
+          <li><a href="curriculum.html" data-key="navResume"> Curriculum</a></li>
+          <li><a href="portafolio.html" data-key="navPortfolio"> Portafolio</a></li>
+          <li><a href="contactos.html" data-key="navContacts"> Contactos</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+  <section id="Portafolio" class="portafolio" style="padding-top: 100px; background-color: #1e2326; color: white; min-height: 100vh;">
+    <div class="contenido-seccion" style="max-width: 1100px; margin: auto; padding: 20px;">
+      <h2 data-key="navPortfolio" style="font-size: 48px; font-family: 'Righteous'; text-align: center; padding: 20px;">Portafolio</h2>
+      
+      <div class="proyecto-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+        <!-- Proyecto 1: Tienda de Juegos -->
+        <div class="proyecto-card" style="background-color: #252a2e; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: transform 0.3s;">
+          <a href="https://github.com/carlitos2110/mi-primer-full-stack" target="_blank" style="text-decoration: none; color: inherit;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="img-project/9356c2a3-9d1a-4de1-9970-a7930972263f.png" alt="Tienda de Juegos" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 20px;">
+              <h3 data-key="project1Title" style="color: #1cb698; margin-bottom: 10px;">Tienda de Juegos</h3>
+              <p data-key="project1Desc" style="font-size: 14px; line-height: 1.6; margin-bottom: 15px;">Una página estática de videojuegos desarrollada con React, enfocada puramente en el frontend para mostrar un catálogo de productos.</p>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">React</span>
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">JavaScript</span>
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">CSS</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Proyecto 2: App de Descarga -->
+        <div class="proyecto-card" style="background-color: #252a2e; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: transform 0.3s;">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="img-project/mp3-web.png" alt="App de Descarga" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 20px;">
+            <h3 data-key="project2Title" style="color: #1cb698; margin-bottom: 10px;">Descargador de Audio y Video</h3>
+            <p data-key="project2Desc" style="font-size: 14px; line-height: 1.6; margin-bottom: 15px;">Aplicación web para descargar contenido multimedia de diversas plataformas, construida con Flask, HTML y CSS.</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Flask</span>
+              <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Python</span>
+              <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Biblioteca Flask/MySQL -->
+        <div class="proyecto-card" style="background-color: #252a2e; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: transform 0.3s;">
+          <a href="https://github.com/carlitos2110/mi-primer-full-stack" target="_blank" style="text-decoration: none; color: inherit;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="img-project/biblioteca-flask.png" alt="Sistema de Biblioteca (Flask)" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 20px;">
+              <h3 data-key="project3Title" style="color: #1cb698; margin-bottom: 10px;">Sistema de Biblioteca (Flask)</h3>
+              <p data-key="project3Desc" style="font-size: 14px; line-height: 1.6; margin-bottom: 15px;">Sistema de gestión de biblioteca con frontend en React y backend en Flask con MySQL.</p>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">React</span>
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Flask</span>
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">MySQL</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Proyecto 4: Biblioteca Node/Mongo -->
+        <div class="proyecto-card" style="background-color: #252a2e; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: transform 0.3s;">
+          <a href="https://github.com/carlitos2110/bibliotecnica" target="_blank" style="text-decoration: none; color: inherit;">
+            <div style="height: 200px; overflow: hidden;">
+              <img src="img-project/biblioteca-node.png" alt="Sistema de Biblioteca (Node.js)" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 20px;">
+              <h3 data-key="project4Title" style="color: #1cb698; margin-bottom: 10px;">Sistema de Biblioteca (Node.js)</h3>
+              <p data-key="project4Desc" style="font-size: 14px; line-height: 1.6; margin-bottom: 15px;">Gestión de biblioteca profesional con React y backend en Node.js usando MongoDB Atlas.</p>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">React</span>
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">Node.js</span>
+                <span style="background-color: #1cb698; padding: 2px 8px; border-radius: 4px; font-size: 12px;">MongoDB</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <button id="languageBtn" class="btn-descargar">🌐 <span data-key="changeLanguage">Cambiar idioma</span><span class="overlay"></span></button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
